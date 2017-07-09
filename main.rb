@@ -7,6 +7,8 @@ user_name = "гость" if (ARGV[0] == nil || ARGV[0] == " ")
 questions = Questions.new(user_name)
 rezults = Rezults.new
 
+puts "rezults.get_rezult = #{rezults.get_rezult(1)}"  # test
+
 until questions.finished?
   questions.next_question
 end

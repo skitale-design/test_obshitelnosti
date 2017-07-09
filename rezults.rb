@@ -1,8 +1,8 @@
 class Rezults
 
   def initialize
-     if File.exists?(".\data\answers.txt")
-       file = File.new(".\data\answers.txt")
+     if File.exists?("./data/answers.txt")
+       file = File.new("./data/answers.txt", "r:UTF-8")
        @rezults = file.readlines
        file.close
       end

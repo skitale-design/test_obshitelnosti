@@ -5,7 +5,7 @@ class Questions
     @name = "Добрый день, #{user_name}!"
     puts "@name = #{@name}"
     if File.exists?("./data/questions.txt")
-       file = File.new("./data/questions.txt")
+       file = File.new("./data/questions.txt", "r:UTF-8")
        @questions = file.readlines
        file.close
     end
