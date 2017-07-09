@@ -4,7 +4,7 @@ require_relative 'rezults'
 user_name = ARGV[0]
 user_name = "гость" if (ARGV[0] == nil || ARGV[0] == " ")
 
-questions = Questions.new  user_name
+questions = Questions.new(user_name)
 rezults = Rezults.new
 
 until questions.finished?
