@@ -1,11 +1,11 @@
 
 class Questions
 
-  def initialize(user_name)
+  def initialize(user_name, questions_path)
     @name = "Добрый день, #{user_name}!"
     puts "@name = #{@name}"
-    if File.exists?("./data/questions.txt")
-       file = File.new("./data/questions.txt", "r:UTF-8")
+    if File.exists?(questions_path)
+       file = File.new(questions_path, "r:UTF-8")
        @questions = file.readlines
        file.close
     end
