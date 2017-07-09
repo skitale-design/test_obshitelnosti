@@ -29,7 +29,7 @@ class Questions
 
   # Проверка на конец списка вопросов (конец массива)
   def finished?
-      return @counter == @questions.size
+      @counter == @questions.size
   end
 
   def get_user_input
@@ -40,7 +40,7 @@ class Questions
       user_input = STDIN.gets.chomp
       break if ["1","2","3"].include?(user_input)
     end
-    return user_input
+    user_input
   end
 
   def print_info
