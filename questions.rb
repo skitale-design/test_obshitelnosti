@@ -4,7 +4,6 @@ class Questions
 
   def initialize(user_name, questions_path)
     @name = "Добрый день, #{user_name}!"
-    puts "@name = #{@name}"
     if File.exists?(questions_path)
        file = File.new(questions_path, "r:UTF-8")
        @questions = file.readlines
@@ -26,7 +25,7 @@ class Questions
   end
 
   def print_info
-    system "clear"
+    system "cls"
     print @name
     print " Ваш текущий балл: #{@score_counter}\n\n"
     puts "(1 – \"да\", 2 – \"нет\", 3 – \"иногда\")\n\n"
