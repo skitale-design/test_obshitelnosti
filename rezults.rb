@@ -8,12 +8,16 @@ class Rezults
   end
 
   def rezult(number)
-     return @rezults[0] if number >= 30
-     return @rezults[1] if number.between?(25, 29)
-     return @rezults[2] if number.between?(19, 24)
-     return @rezults[3] if number.between?(14, 18)
-     return @rezults[4] if number.between?(9, 13)
-     return @rezults[5] if number.between?(4, 8)
-     return @rezults[6] if number < 4
+    # 1..3 -> 1,2,3 (включая последнюю цифру),  1...3 -> 1,2 (не включает последнюю цифру)
+     case number
+     when 30 .. 32 then @rezults[0]
+     when 25 .. 29 then @rezults[1]
+     when 19 .. 24 then @rezults[2]
+     when 14 .. 18 then @rezults[3]
+     when 9 .. 13 then @rezults[4]
+     when 4 .. 8 then @rezults[5]
+     when 0 .. 4 then @rezults[6]
+     end
+
   end
 end
