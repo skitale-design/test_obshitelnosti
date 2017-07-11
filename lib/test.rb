@@ -1,4 +1,4 @@
-class Questions
+class Test
   # Замена геттера для @score_counter
   attr_reader :score_counter
 
