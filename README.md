@@ -1,5 +1,5 @@
 **Программа "Тест общительности" Версия 1.3** 
-
+Автор: Ильин Александр
 Написана на Ruby (Версия 2.4.1)
 
 *Ссылка на оригинал теста: https://profilib.com/chtenie/74839/nina-telenkova-testy-na-vse-sluchai-zhizni-3.php#t1*
