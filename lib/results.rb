@@ -8,16 +8,14 @@ class Results
   end
 
   def result(number)
-    # 1..3 -> 1,2,3 (включая последнюю цифру),  1...3 -> 1,2 (не включает последнюю цифру)
      case number
-     when 30 .. 32 then @results[0]
-     when 25 .. 29 then @results[1]
-     when 19 .. 24 then @results[2]
-     when 14 .. 18 then @results[3]
-     when 9 .. 13 then @results[4]
-     when 4 .. 8 then @results[5]
-     when 0 .. 4 then @results[6]
+       when 30 .. 32 then @results[0]
+       when 25 .. 29 then @results[1]
+       when 19 .. 24 then @results[2]
+       when 14 .. 18 then @results[3]
+       when 9 .. 13 then @results[4]
+       when 4 .. 8 then @results[5]
+       when 0 .. 4 then @results[6]
      end
-
   end
 end
