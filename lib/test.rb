@@ -1,6 +1,5 @@
 class Test
   attr_reader :score_counter
-
   def initialize(user_name, questions_path)
     @name = "Добрый день, #{user_name}!"
     if File.exists?(questions_path)
