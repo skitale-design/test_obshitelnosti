@@ -1,11 +1,12 @@
 class Test
   attr_reader :score_counter
+  
   def initialize(user_name, questions_path)
     @name = "Добрый день, #{user_name}!"
     if File.exists?(questions_path)
-       file = File.new(questions_path, "r:UTF-8")
-       @questions = file.readlines
-       file.close
+      file = File.new(questions_path, "r:UTF-8")
+      @questions = file.readlines
+      file.close
     end
     @question_counter = 0
     @score_counter = 0
@@ -40,6 +41,6 @@ class Test
   end
 
   def finished?
-      @question_counter == @questions.size
+    @question_counter == @questions.size
   end
 end
